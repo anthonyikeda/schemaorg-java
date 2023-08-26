@@ -8,10 +8,26 @@
     <name>Schema Org</name>
     <description>Schema.org Entities</description>
     <properties>
+        <project.scm.id>github</project.scm.id>
         <java.version>17</java.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub anthony ikeda Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/anthonyikeda/schemaorg-java</url>
+        </repository>
+    </distributionManagement>
+
+    <scm>
+        <connection>scm:git:${project.scm.url}</connection>
+        <url>https://github.com/anthonyikeda/schemaorg-java.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
     <dependencies>
         <dependency>
             <groupId>com.google.code.findbugs</groupId>
